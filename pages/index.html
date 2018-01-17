@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="renderer" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <script type="text/javascript" src="../js/inner-static.js"></script>
+    <title>首页</title>
+</head>
+
+<body>
+    <div class="sys-header">
+        <div class="sys-header-content">
+            <div class="shc-left">
+                <div class="logo">logo</div>
+            </div>
+            <div class="shc-right">
+                <div class="sys-search">
+                    <div class="sys-search-content">
+                        <select name="" id="" class="sys-select">
+                            <option value="">客户信息</option>
+                        </select>
+                        <input type="text" placeholder="请输入客户名称或者交易账号">
+                        <i class="sys-search-icon"></i>
+                    </div>
+                </div>
+                <div class="sys-time">系统时间：2016-12-19 </div>
+                <div class="sys-man">操作员：系统管理员
+                </div>
+                <a href="#" class="sys-loginout">退出</a>
+            </div>
+        </div>
+    </div>
+    <div class="sys-main">
+        <div class="sys-main-content cle">
+            <div class="sys-menu">
+                <div class="menu-toggle"></div>
+                <i class="expand-icon"></i>
+                <div class="child-menu">
+                    <div id="child-menu-content">
+                        <div class="child-menu-warp">
+                            <div class="scroll-top-arrow"></div>
+                            <div class="scroll-bottom-arrow"></div>
+                            <dl class="menu-down" parent-menuid="menu-2">
+                                <dd class="menu-title">
+                                    <div>客户信息管理</div>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">客户账户管理</span></a>
+                                    <!--parent-menuid为父级菜单-->
+
+
+                                    <script type="text/javascript">
+                                        for(var i=5;i<20;i++){
+                                            document.write('<div class="child-menu-item"><a href="home.html" title="账户管理" open-id="accounts'+i+'" open-mode="iframe" class="js-handler" open-text="账户管理'+i+'">账户管理'+i+'</a></div>')
+                                        }
+                                    </script>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">银行卡信息管理</span></a>
+                                    <div class="child-menu-item">
+                                        <a href="home.html" title="账户管理" open-id="bank1" open-mode="iframe" class="js-handler" open-text="银行卡管理">银行卡管理</a>
+                                    </div>
+                                    <div class="child-menu-item">
+                                        <a href="home.html" open-id="bank2" open-mode="iframe" class="js-handler" open-text="银行卡管理2">银行卡管理2</a>
+                                    </div>
+                                </dd>
+                                <dd class="">
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">账户申请流水</span></a>
+                                    <script type="text/javascript">
+                                        for(var i=0;i<10;i++){
+                                            document.write('<div class="child-menu-item"><a href="home.html" title="账户申请流水" open-id="zh'+i+'" open-mode="iframe" class="js-handler" open-text="账户申请流水'+i+'">账户申请流水'+i+'</a></div>')
+                                        }
+                                    </script>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">业务复核</span></a>
+                                </dd>
+                            </dl>
+                            <dl class="menu-down" parent-menuid="menu-3">
+                                 <dd class="menu-title">
+                                    <div>资金业务</div>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">认申购资金管理</span></a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">资金清退管理</span></a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">资金存入管理</span></a>
+                                </dd>
+                            </dl>
+                            <dl class="menu-down" parent-menuid="menu-4">
+                                 <dd class="menu-title">
+                                    <div>综合查询</div>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">基金信息查询</span></a>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">客户份额查询</span></a>
+                                </dd>
+                            </dl>
+                            <dl class="menu-down" parent-menuid="menu-5">
+                                 <dd class="menu-title">
+                                    <div>系统管理</div>
+                                </dd>
+                                <dd>
+                                    <a href="javascript:;" class="js-handler"><span class="menu-text">权限管理</span></a>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+                <!--menu-id为菜单id，前缀为menu,和2级菜单的parent-menuid相对应-->
+                <ul class="sys-menu-ul">
+                    <li class="has-child open">
+                        <!--参数说明： open-mode为页面打开模式，iframe表示新增一个iframe页面,open-id为iframe页面的唯一id ，open-text为打开iframe页面对应的tab文本-->
+                        <a href="javascript:;" menu-id="menu-1" class="menu-handler js-handler" tip-title="客户信息管理"><em class="menu-icon menu-icon-1"></em><span class="menu-text">首页</span></a>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;" menu-id="menu-2" class="menu-handler js-handler" tip-title="客户交易管理"><em class="menu-icon menu-icon-2"></em><span class="menu-text">常用功能</span></a>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;" menu-id="menu-3" class="menu-handler js-handler" tip-title="资金业务"><em class="menu-icon menu-icon-3"></em><span class="menu-text">账户管理</span></a>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;" menu-id="menu-4" class="menu-handler js-handler" tip-title="综合查询"><em class="menu-icon menu-icon-4"></em><span class="menu-text">日常交易管理</span></a>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;" menu-id="menu-5" class="menu-handler js-handler" tip-title="系统管理"><em class="menu-icon menu-icon-5"></em><span class="menu-text">特殊交易管理</span></a>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;" menu-id="menu-5" class="menu-handler js-handler" tip-title="系统管理"><em class="menu-icon menu-icon-6"></em><span class="menu-text">资金管理</span></a>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;" menu-id="menu-5" class="menu-handler js-handler" tip-title="系统管理"><em class="menu-icon menu-icon-7"></em><span class="menu-text">凭证管理</span></a>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;" menu-id="menu-5" class="menu-handler js-handler" tip-title="系统管理"><em class="menu-icon menu-icon-8"></em><span class="menu-text">报表管理</span></a>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;" menu-id="menu-5" class="menu-handler js-handler" tip-title="系统管理"><em class="menu-icon menu-icon-9"></em><span class="menu-text">查询管理</span></a>
+                    </li>
+                    <li class="has-child">
+                        <a href="javascript:;" menu-id="menu-5" class="menu-handler js-handler" tip-title="系统管理"><em class="menu-icon menu-icon-10"></em><span class="menu-text">系统管理</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sys-main-area ">
+                <div class="ui-page-tab">
+                   <div class="ui-page-tab-extend">
+                        <span class="extend-handler"></span>
+                        <ul>
+                        <li class="close-current">关闭当前</li>
+                        <li class="close-all">关闭所有</li>
+                        </ul>
+                   </div>
+                    <ul class="ui-page-tab-list " id="ui-page-tab-list">
+                        <!--默认首页无法删除-->
+                        <li class="ui-page-tab-item current" id="ui-tab-home"><span class="tab-item-text ">首页</span><i class='tab-item-close'></i></li>
+                    </ul>
+                </div>
+                <div class="ui-page-tab-iframe" id="ui-page-tab-iframe">
+                    <iframe id="frame-tab-home" src="home.html" frameborder="0" width="100%" height="100%"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sys-footer">
+        <div class="sys-footer-content"></div>
+    </div>
+    <div class="shade none"></div>
+</body>
+
+</html>
